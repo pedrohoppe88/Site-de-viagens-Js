@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Viagens São Petersburgo</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <button class="up_">^</button>
+      <head>
+            
+            <nav>
+                  
+                  <img src="img/Main_logo-removebg-preview.png" alt="teste" id="Logo">
+
+                  <div class="login_and_shop">
+                        <button id="login_">Login</button>
+                        <button id="myBtn">Carrinho</button>
+                   </div>      
+       
+
+                  <div class="navBar">
+
+            </nav>
+                  <div class="nav2">
+
+                  
+            <ul id="naBar">
+
+                  <li> <a href="home1.html">Home</a> </li>
+                  <li> <a href="viagens.html">Shop</a> </li>
+                  <button id="carrinho_" onclick="bnt_carrinho">Carrinho</button>
+
+            </ul>
+            
+
+                   </div>
+
+              </div>
+              <h1 class="Restaurantesee">Restaurantes</h1>
+
+
+      <div class="R_shop">
+
+            <div class="card_1">  /* card1 */
+
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/e3/92/be/getlstd-property-photo.jpg" alt="logo">
+                  <h2>Leo Grill & Pizza</h2>
+                  <span>Preço: $160</span>
+                  <form action="">
+                        <button id="Shopp_bnt1" onclick="bnt1()">Comprar</button>
+                  </form>
+
+                  
+
+
+            </div>
+
+            <div class="card_1"> /* card2 */
+
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/d0/ad/0a/caption.jpg" alt="logo">
+                  <h2>Dans Le Noir</h2>
+                  <span>Preço: $250</span>
+                  <form action="">
+                        <button id="Shopp_bnt2" onclick="bnt2()">Comprar</button>
+                  </form>
+
+
+            </div>
+
+            <div class="card_1"> /* card3 */
+
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/1d/df/fb/caption.jpg" alt="logo">
+                  <h2>Tavern Hlebnikov</h2>
+                  <span>Preço: $90</span>
+                  <form action="">
+                        <button id="Shopp_bnt3" onclick="bnt3()">Comprar</button>
+                  </form>
+
+            </div>
+                  
+            </div>
+            <h1 class="Hoteisexplica">Hotéis</h1>
+
+            <div class="R_shop2">
+                  
+                  <div class="card_1"> /* card4 */
+
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/67/70/67/caption.jpg?w=1200&h=-1&s=1" alt="logo">
+                        <h2>Paul Apartments Boutique Hotel</h2>
+                        <span>Preço da Diária: $250</span>
+                        <form action="">
+                              <button id="Shopp_bnt4" onclick="bnt4()">Comprar</button>
+                        </form>
+      
+                  </div>
+
+
+                  <div class="card_1"> /* card5 */
+
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/22/22/da/77/406.jpg" alt="logo">
+                        <h2>Hampton Inn Pinellas Park St Petersburg</h2>
+                        <span>Preço da Diária: $200</span>
+                        <form action="">
+                              <button id="Shopp_bnt5" onclick="bnt5()">Comprar</button>
+                        </form>
+      
+                  </div>
+
+                  <div class="card_1"> /* card6 */
+
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/ee/b9/11/caption.jpg?w=900&h=-1&s=1" alt="logo">
+                        <h2>Casa Leto</h2>
+                        <span>Preço da Diária: $185</span>
+                        <form action="">
+                              <button id="Shopp_bnt6" onclick="bnt6()">Comprar</button>
+                        </form>
+      
+                  </div>
+
+
+                  </div>
+
+                  <div class="calculadora_">
+                        <h2>Converter moeda</h2>
+                        <input type="number" placeholder="Informe o valer" id="input_convert">
+                        <button id="Submeter_convet">Converter</button>
+                        <span id="span_Submeter">valor em rublos: </span>
+                  </div>
+
+                  
+            
+
+
+
+
+     <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="carrinho_h1">Carrinho</h1>
+
+            <div class="card_1M">
+                  <div class="caixinha">
+            <img id="card1_img" src="" alt="logo">
+            <h2 id="card1_h2">name</h2>
+            <span id="card1_span">Valor à ser pago:</span>
+            <input type="number" id="quantity_1" name="quantity" min="1" max="10">
+            <button id="valor_c1" onclick="valor_c1()">add</button>
+                   </div>
+            </div>
+
+            <div class="card_2M">
+                  <div class="caixinha">
+                  <img id="card2_img" src="" alt="logo">
+                  <h2 id="card2_h2">name</h2>
+                  <span id="card2_span">Valor à ser pago:</span>
+                  <input type="number" id="quantity_2" name="quantity" min="1" max="10">
+                  <button id="valor_c2" onclick="valor_c2()">add</button>
+                   </div>
+                  </div>
+
+                  <div class="card_3M">
+                        <div class="caixinha">
+                        <img id="card3_img" src="" alt="logo">
+                        <h2 id="card3_h2">name</h2>
+                        <span id="card3_span">Valor à ser pago:</span>
+                        <input type="number" id="quantity_3" name="quantity" min="1" max="10">
+                        <button id="valor_c3" onclick="valor_c3()">add</button>
+                          </div>      
+                        </div>
+
+                        <div class="card_4M">
+                              <div class="caixinha">
+                              <img id="card_img" src="" alt="logo">
+                              <h2 id="card4_h2">name</h2>
+                              <span id="card4_span">Valor à ser pago:</span>
+                              <input type="number" id="quantity_4" name="quantity" min="1" max="10">
+                              <button id="valor_c4" onclick="valor_c4()">add</button>
+                        </div>
+                              </div>
+
+                              <div class="card_5M">
+                                    <div class="caixinha">
+                                    <img id="card5_img" src="" alt="logo">
+                                    <h2 id="card5_h2">name</h2>
+                                    <span id="card5_span">Valor à ser pago:</span>
+                                    <input type="number" id="quantity_5" name="quantity" min="1" max="10">
+                                    <button id="valor_c5" onclick="valor_c5()">add</button>
+                              </div>
+                                    </div>
+
+                                    <div class="card_6M">
+                                          <div class="caixinha">
+                                          <img id="card1_img" src="" alt="logo">
+                                          <h2 id="card1_h2">name</h2>
+                                          <span id="card1_span">Valor à ser pago:</span>
+                                          <input type="number" id="quantity_1" name="quantity" min="1" max="10">
+                                          <button id="valor_c1" onclick="valor_c1()">add</button>
+                                    </div>
+                                          </div>
+    
+      </div>  
+
+          
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
